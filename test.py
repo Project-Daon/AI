@@ -11,7 +11,7 @@ criteria = 0.5
 
 model.to(device)
 
-emotion_ids = ["분노", "슬픔", "기쁨", "불안"]
+emotion_ids = ["분노", "슬픔", "기쁨", "불안"] # 변경 X
 
 
 def predict(text: str) -> str:

@@ -4,7 +4,7 @@ import torch
 import uvicorn
 from transformers import (ElectraTokenizerFast, ElectraForSequenceClassification, BertTokenizerFast, BertForTokenClassification, pipeline)
 
-emotion_ids = ["분노", "슬픔", "기쁨", "불안"] # 변경 X
+emotion_ids = ["rage", "sadness", "happiness", "anxiety"] # 변경 X
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device('cpu')
 criteria_prob = 0.6
 
